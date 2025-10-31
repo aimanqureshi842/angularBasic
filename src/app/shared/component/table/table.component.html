@@ -1,0 +1,103 @@
+<hr>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Details</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products ; index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.details}}</td>
+                    <td>{{product.stock}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let std of students;let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{std.name}}</td>
+                    <td>{{std.course}}</td>
+                    <td>{{std.marks}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Employee Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let empl of employees; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{empl.name}}</td>
+                    <td>{{empl.position}}</td>
+                    <td>{{empl.salary}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Course Name</th>
+                <th>Duration</th>
+                <th>Fees</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let course of courses; index as i">
+                <td>{{i+1}}</td>
+                <td>{{course.name}}</td>
+                <td>{{course.duration}}</td>
+                <td>{{course.fee}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let book of books;let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{book.title}}</td>
+                    <td>{{book.author}}</td>
+                    <td>{{book.price}}</td>
+                    <td>{{book.genre}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

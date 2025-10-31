@@ -1,0 +1,18 @@
+<hr>
+<h1 class="text-center">Component 8</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <p class="alert alert-success">The <strong>{{ courseName }}</strong> course lasts for <strong>
+                {{ duration }}</strong></p>
+        <p class="alert alert-success">The <strong>{{ course.name }}</strong> course runs for <strong>{{ course.duration
+                }}</strong></p>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let opr of operatingSystems">
+                {{opr}}
+            </li>
+        </ul>
+    </div>
+</div>

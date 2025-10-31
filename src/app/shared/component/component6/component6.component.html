@@ -1,0 +1,18 @@
+<hr>
+<h1 class="text-center">Component 6</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <p class="alert alert-success">{{ employeeName }} works as a <strong>{{ position }}</strong> in the company.
+        </p>
+        <p class="alert alert-success">{{ employee.name }} works as a <strong>{{ employee.position }}</strong> in the
+            company</p>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let cloudp of cloudPlatforms">
+                {{cloudp}}
+            </li>
+        </ul>
+    </div>
+</div>

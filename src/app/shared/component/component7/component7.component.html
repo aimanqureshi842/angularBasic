@@ -1,0 +1,19 @@
+<hr>
+<h1 class="text-center">Component 7</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <p class="alert alert-success">The book <strong>{{ bookTitle }}</strong> is written by <strong>{{ author
+                }}</strong>.
+        </p>
+        <p class="alert alert-success">The book <strong>{{ book.title }}</strong> is written by <strong>{{ book.author
+                }}</strong></p>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let tool of tools">
+                {{tool}}
+            </li>
+        </ul>
+    </div>
+</div>

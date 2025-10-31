@@ -1,0 +1,18 @@
+<hr>
+<h1 class="text-center">Component 5</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <p class="alert alert-success">{{ studentName }} is enrolled in the <strong>{{ course }}</strong> course.
+        </p>
+        <p class="alert alert-success">{{ student.name }} is enrolled in the <strong>{{ student.course }}</strong>
+            course</p>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let web of webTech">
+                {{web}}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<h1 class="text-center">Component 2</h1>
+<div class="row">
+    <div class="col-md-6">
+        <p class="alert alert-primary">this is the mobile <strong>{{mobileName}}</strong> with id <strong>{{mobileId}}</strong></p>
+        <p class="alert alert-primary">
+            The {{mobile.productName}} by {{mobile.brand}}{{mobile.details}} for
+            {{mobile.price}}.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>SmartPhone List</h2>
+        <ul class="list-group">
+                <li class="list-group-item" *ngFor="let mobile of mobilesArr">
+                    {{mobile}}
+                </li>
+
+        </ul>
+    </div>
+</div>
+<hr>

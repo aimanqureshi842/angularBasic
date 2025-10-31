@@ -1,0 +1,38 @@
+<h1 class="text-center">Component 1</h1>
+<div class="row">
+    <div class="col-md-6">
+        <p class="alert alert-info">this is the product <strong>{{productName}}</strong> with id <strong>{{productId}}</strong></p>
+        <p class="alert alert-info">this is the product {{productInfo.productName}} nd the details of this are {{productInfo.details}} with id {{productInfo.id}} </p>
+    </div>
+        <div class="col-6">
+            <h2>
+            Electronic Devices
+            </h2>
+     <ul class="list-group">
+        <li class="list-group-item" *ngFor="let product of products">
+            {{product}}
+        </li>
+     </ul>
+</div>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
