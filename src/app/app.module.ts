@@ -16,6 +16,8 @@ import { Component8 } from './shared/component/component8/component8.component';
 import { Component9 } from './shared/component/component9/component9.component';
 import { Component10 } from './shared/component/component10/component10.component';
 import { CardComponent } from './shared/component/card/card.component';
+import { ProductDashboardComponent } from './shared/component/product-dashboard/product-dashboard.component';
+import { ProductComponent } from './shared/component/product-dashboard/product/product.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CardComponent } from './shared/component/card/card.component';
     Component9,
     Component10,
     TableComponent,
-    CardComponent
+    CardComponent,
+    ProductDashboardComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

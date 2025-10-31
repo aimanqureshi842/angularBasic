@@ -1,0 +1,26 @@
+
+<div class="row">
+    <div class="col-6">
+        <p class="alert" [ngStyle]="{
+            backgroundColor:isProductAvailable? 'blue':'grey' 
+        } " [ngClass]="{
+            'text-white':isProductAvailable,
+            'text-danger':!isProductAvailable
+        }"> The product {{productName}} with Id {{productId}}</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
