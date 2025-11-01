@@ -9,6 +9,8 @@ export class ProductComponent implements OnInit {
 productName:string='samsung Galaxy';
 productId:string='234'
 isProductAvailable!:boolean;
+userName:string='iamAiman';
+msg:string='<strong>hi aiman aiman</strong>'
 
   constructor() { }
 

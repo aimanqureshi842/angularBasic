@@ -8,8 +8,16 @@
             <h2>
             Electronic Devices
             </h2>
+     <!-- <ul class="list-group">
+        <li class="list-group-item" *ngFor="let product of products" >
+        {{product}}
+        </li>
+     </ul> -->
      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let product of products">
+        <li class="list-group-item" *ngFor="let product of products ;let i=index" [ngClass]="{
+            'bg-primary':(i+1) %2 ===0,
+            'bg-danger':(i+1) %2 !==0
+        }">
             {{product}}
         </li>
      </ul>
