@@ -1,33 +1,77 @@
+<!-- attribute directive example -->
 <div class="row">
     <div class="col-6">
         <p class="alert" [ngStyle]="{
             backgroundColor:isProductAvailable? 'blue':'grey' 
-        }" 
-        [ngClass]="{
+        }" [ngClass]="{
             'text-white':isProductAvailable,
             'text-danger':!isProductAvailable
         }"> The product {{productName}} with Id {{productId}}
-             <!-- <strong *ngIf="isProductAvailable ; else noproduct">product is available</strong>
+            <!-- <strong *ngIf="isProductAvailable ; else noproduct">product is available</strong>
             <ng-template #noproduct>
                 <strong>product is available</strong> 
             </ng-template> -->
-                <strong *ngIf="isProductAvailable">product is available</strong>
-                <strong *ngIf="!isProductAvailable">product is not available</strong>
+            <strong *ngIf="isProductAvailable">product is available</strong>
+            <strong *ngIf="!isProductAvailable">product is not available</strong>
         </p>
     </div>
 </div>
 
 <div class="row">
     <div class="col-6">
-        <div class="form-group">
-            <input type="text" class="form-control" [value]="userName" >
-        </div>
+        <!-- <ul class="list-group">
+        <li class="list-group-item" *ngFor="let product of products" >
+        {{product}}
+        </li>
+     </ul> -->
+        <ul class="list-group">
+            <li class="list-group-item hovercss" *ngFor="let product of products ;let i=index" [ngClass]="{ 
+            'bg-primary':(i+1) %2 ===0,
+            'bg-danger':(i+1) %2 !==0
+        }">
+                {{product}}
+            </li>
+        </ul>
+
     </div>
 </div>
 
-<p  [innerHTML]="msg">
+
+
+
+<!-- property binding examples -->
+<div class="row">
+    <div class="col-6">
+        <div class="form-group">
+            <input type="text" class="form-control" [value]="userName">
+            <!-- userName is a typescript property which we bind using property binding [] -->
+        </div>
+    </div>
+</div>
+<hr>
+
+<p [innerHTML]="msg">
+                <!-- msg is a typescript property which we bind using property binding [] -->
+
 </p>
 
+
+<img [src]="userImg" alt="" class="" width="350px"> <hr>
+<div>
+    <button mat-raised-button color="primary" [disabled]="!isFormValid">submit Button</button>
+</div>
+<!-- button disabled="true" means it disabled the button if false it enables the button here isformvalid value is false we did its navigation to make it tue to disabled the button and set the timeout to enable the button nd set it value true navigation of true is false so button enables -->
+
+ <!-- isformvalid is a typescript property which we bind using property binding [] -->
+
+<!-- event binding example -->
+
+<hr>
+
+<div class="form-group">
+    <input (keyup)="onkeyup($event)" type="text" class="form-control" >
+    <!-- $event is a argument here represents keyup event -->
+</div>
 
 
 

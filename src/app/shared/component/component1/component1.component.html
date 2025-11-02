@@ -14,10 +14,14 @@
         </li>
      </ul> -->
      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let product of products ;let i=index" [ngClass]="{
+         <li class="list-group-item hovercss" *ngFor="let product of products ;let i=index"
+          [ngClass]="{ 
             'bg-primary':(i+1) %2 ===0,
             'bg-danger':(i+1) %2 !==0
-        }">
+        }" 
+        > 
+                 <!-- <li class="list-group-item hovercss" *ngFor="let product of products"> -->
+        
             {{product}}
         </li>
      </ul>
